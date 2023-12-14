@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kliniku Animation</title>
+    <style>
+
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+
+
+    ::-webkit-scrollbar-track {
+        width: 20px;
+        background: #010101;
+        border-left: 0 slide width;
+        border-right: 0 slide width;
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+        background: #FB8B24;
+        width: 0;
+        height: 15%;
+        cursor: pointer;
+    }
+
+    .paralax {
+        position: absolute;
+        height: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .paralaxy {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .scroll {
+        background: url(image/m_3.png) bottom/100% no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        position: relative;
+        left: 20px;
+        z-index: 1;
+        max-width: 60px;
+        margin: 0 auto;
+        margin-top: 100vh;
+    }
+
+    </style>
+</head>
+<body>
+ 
+    <div class="paralax">
+        <div class="paralaxy scroll"></div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <img src="1.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
